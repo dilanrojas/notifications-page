@@ -1,0 +1,107 @@
+[
+  {
+    "user": {
+      "name": "Mark Webber",
+      "avatar": "avatar-mark-webber.webp",
+      "link": "#"
+    },
+    "content": {
+      "main": "reacted to your recent post",
+      "reference": {
+        "text": "My first tournament today",
+        "link": "#"
+      }
+    },
+    "date": "1m ago",
+    "isRead": false
+  },
+  {
+    "user": {
+      "name": "Angela Gray",
+      "avatar": "avatar-angela-gray.webp",
+      "link": "#"
+    },
+    "content": {
+      "main": "followed you"
+    },
+    "date": "5m ago",
+    "isRead": false
+  },
+  {
+    "user": {
+      "name": "Jacob Thompson",
+      "avatar": "avatar-jacob-thompson.webp",
+      "link": "#"
+    },
+    "content": {
+      "main": "has joined your group",
+      "reference": {
+        "text": "Chess Club",
+        "link": "#"
+      }
+    },
+    "date": "1 day ago",
+    "isRead": false
+  },
+  {
+    "user": {
+      "name": "Rizky Hasanuddin",
+      "avatar": "avatar-rizky-hasanuddin.webp",
+      "link": "#"
+    },
+    "content": {
+      "main": "sent you a private message",
+      "message": "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game."
+    },
+    "date": "5 days ago",
+    "isRead": true
+  },
+  {
+    "user": {
+      "name": "Kimberly Smith",
+      "avatar": "avatar-kimberly-smith.webp",
+      "link": "#"
+    },
+    "content": {
+      "main": "commented on your picture",
+      "picture": {
+        "source": "image-chess.webp",
+        "link": "#"
+      }
+    },
+    "date": "1 week ago",
+    "isRead": true
+  },
+  {
+    "user": {
+      "name": "Nathan Peterson",
+      "avatar": "avatar-nathan-peterson.webp",
+      "link": "#"
+    },
+    "content": {
+      "main": "reacted to your recent post",
+      "reference": {
+        "text": "5 end-game strategies to increase your win rate",
+        "link": "#"
+      }
+    },
+    "date": "2 weeks ago",
+    "isRead": true
+  },
+  {
+    "user": {
+      "name": "Anna Kim",
+      "avatar": "avatar-anna-kim.webp",
+      "link": "#"
+    },
+    "content": {
+      "main": "left the group",
+      "reference": {
+        "text": "Chess Club",
+        "link": "#"
+      }
+    },
+    "date": "2 weeks ago",
+    "isRead": true
+  }
+]

@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+  --ff-html: "Plus Jakarta Sans", serif;
+
+  --red: hsl(1, 90%, 64%);
+  --blue: hsl(219, 85%, 26%);
+
+  --white: hsl(0, 0%, 100%);
+  --vl-grayish-blue: hsl(210, 60%, 98%);
+  --l-grayish-blue-1: hsl(211, 68%, 94%);
+  --l-grayish-blue-2: hsl(205, 33%, 90%);
+  --grayish-blue: hsl(219, 14%, 63%);
+  --d-grayish-blue: hsl(219, 12%, 42%);
+  --vd-blue: hsl(224, 21%, 14%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--ff-html);
+  line-height: 1.5;
+}
+
+body {
+  background-color: var(--vl-grayish-blue);
+  padding-block: 4rem;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor
+}
+
+/* Contents */
+.notification-center {
+  width: min(800px, 100% - 1rem);
+  margin-inline: auto;
+
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0px 10px 15px rgba(0 0 0 / .04);
+}
+
+.notification-center-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.notification-title {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.notification-title h1 {
+  font-weight: 900;
+}
+
+.notification-count {
+  background-color: var(--blue);
+  color: var(--white);
+  border-radius: 5px;
+  padding-inline: .6rem;
+  font-weight: 600;
+}
+
+.mark-as-read {
+  color: var(--d-grayish-blue);
+  font-weight: 500;
+  transition: color .1s ease-in-out;
+
+  &:hover { color: var(--blue) }
+}
+
+.notification-list {
+  padding-inline: 2rem;
+
+  & > * + * { margin-top: .55rem }
+}
+
+.notification-card {
+  color: var(--d-grayish-blue);
+  background-color: var(--vl-grayish-blue);
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  gap: 1rem;
+}
+
+.notification-content-main > * + * {
+  margin-left: .3rem;
+}
+
+.notification-content a {
+  transition: color .1s ease-in-out;
+  font-weight: 700;
+  
+  &:hover { color: var(--blue) }
+}
+
+.notification-username {
+  color: var(--vd-blue);
+}
+
+.notification-card.message {
+  background-color: var(--white);
+}
+
+.notification-message {
+  border: 1px solid var(--l-grayish-blue-2);
+  padding: 1rem;
+  border-radius: 5px;
+  margin-top: .5rem;
+}
+
+.unread-mark {
+  display: inline-block;
+  margin-left: .4rem;
+  width: .5em;
+  height: .5em;
+  background-color: var(--red);
+  border-radius: 100%;
+}
+
+.notification-picture {
+  margin-left: auto;
+}
+
+@media (width <= 768px) {
+  body {
+    padding-block: 0em;
+  }
+
+  .notification-center-header {
+    padding: 1.3rem 1rem
+  }
+
+  .notification-list {
+    padding-inline: 1rem;
+  }
+
+  .notification-center {
+    width: 100%;
+    min-height: 100dvh;
+  }
+}
